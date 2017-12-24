@@ -5,7 +5,7 @@ module.exports = class Register extends React.Component {
     render() {
         return (
         <div className='registerForm text-center container'>
-        <h1>Register account with my-want-list</h1>
+        <h1>Register account with BuildACart</h1>
         
         {
             this.props.msg.success ? 

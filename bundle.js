@@ -25507,7 +25507,7 @@ module.exports = function (_React$Component) {
                 _react2.default.createElement(
                     'h1',
                     null,
-                    'Register account with my-want-list'
+                    'Register account with BuildACart'
                 ),
                 this.props.msg.success ? _react2.default.createElement(
                     'div',
