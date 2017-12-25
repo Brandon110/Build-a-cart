@@ -64,6 +64,7 @@ body, html {
 img {
     width: 100px;
     height: 100px;
+    margin: 5px;
 }
 
 h1 {
@@ -156,6 +157,7 @@ button {
 .cartImgs {
     height: 60px;
     width: 60px;
+    margin: 5px;
 }
 
 .removeBtn {

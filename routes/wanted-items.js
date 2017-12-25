@@ -47,8 +47,6 @@ module.exports = function(app) {
     app.get('/want-list/items', (req, res) => {
         wantListCollection.findOne({ 'email': req.session.user }, (err, col) => {
             if (err) return err;
-            
-            const arr = [];
 
             if (!col) {
                 res.redirect('/login');
