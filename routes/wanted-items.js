@@ -14,6 +14,10 @@ module.exports = function(app) {
                 }
             }, { new: true }, (err, updated) => {
                 if (err) return err;
+                
+                if(updated){
+                    res.send('success');
+                }
             });
         }
 
@@ -39,7 +43,6 @@ module.exports = function(app) {
             }
             else {
                 addItemToWantList();
-                res.send('success');
             }
         });
     });
