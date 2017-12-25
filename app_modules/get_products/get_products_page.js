@@ -6,7 +6,7 @@ module.exports = class ProductsPage extends React.Component {
         
         return (
             <div className='container'>
-            <h1>Product Search</h1>
+            <h1 style={{textAlign: 'left'}}>Product Search</h1>
             
             <form onSubmit={(e) => this.props.handleSubmit(e)}>
             <div className='form-group row'>
@@ -54,7 +54,7 @@ module.exports = class ProductsPage extends React.Component {
             results.map((result, index) => {
             return <div className='col' key={index}>
             <h5>{result.name}</h5>
-            <img onError={(e) => this.props.handleImgError(e)} src={result.image} alt={result.name}/>
+            <img className='img-thumbnail' onError={(e) => this.props.handleImgError(e)} src={result.image} alt={result.name}/>
             <p><b>Description:</b> {result.description}</p>
             <p><b>Current price:</b> {result.price}</p>
             <button onClick={(e) => this.props.handleAddItemToWantList(e)} id={result.name} type='button'>&#x1f6cd;</button>

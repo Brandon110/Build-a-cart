@@ -4,7 +4,7 @@ module.exports = class Home extends React.Component {
     render() {
         return (
             <div>
-            <div className='homeTitle container-fluid'>
+            <div className='title container-fluid'>
             <h1 style={{fontSize: '50px'}}>MakeACart</h1>
             <i className='fa fa-shopping-cart'></i>
             </div>

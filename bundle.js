@@ -20534,7 +20534,7 @@ module.exports = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                     'div',
-                    { className: 'homeTitle container-fluid' },
+                    { className: 'title container-fluid' },
                     _react2.default.createElement(
                         'h1',
                         { style: { fontSize: '50px' } },
@@ -26066,7 +26066,7 @@ module.exports = function (_React$Component) {
                 { className: 'container' },
                 _react2.default.createElement(
                     'h1',
-                    null,
+                    { style: { textAlign: 'left' } },
                     'Product Search'
                 ),
                 _react2.default.createElement(
@@ -26172,7 +26172,7 @@ module.exports = function (_React$Component) {
                                     null,
                                     result.name
                                 ),
-                                _react2.default.createElement('img', { onError: function onError(e) {
+                                _react2.default.createElement('img', { className: 'img-thumbnail', onError: function onError(e) {
                                         return _this2.props.handleImgError(e);
                                     }, src: result.image, alt: result.name }),
                                 _react2.default.createElement(
@@ -26385,13 +26385,13 @@ module.exports = function (_React$Component) {
                 'div',
                 { className: 'container' },
                 _react2.default.createElement(
+                    'h1',
+                    { style: { textAlign: 'left' } },
+                    'Want Cart'
+                ),
+                _react2.default.createElement(
                     'div',
                     { className: 'form-group' },
-                    _react2.default.createElement(
-                        'h1',
-                        null,
-                        'Want Cart'
-                    ),
                     _react2.default.createElement('hr', null),
                     _react2.default.createElement(
                         'form',
@@ -26445,7 +26445,7 @@ module.exports = function (_React$Component) {
                                 null,
                                 result.name
                             ),
-                            _react2.default.createElement('img', { className: 'cartImgs', onError: function onError(e) {
+                            _react2.default.createElement('img', { className: 'cartImgs img-thumbnail', onError: function onError(e) {
                                     return _this2.props.handleImgError(e);
                                 }, src: result.image, alt: result.name }),
                             _react2.default.createElement(
@@ -26693,7 +26693,7 @@ module.exports = function (_React$Component) {
                 { className: 'container' },
                 _react2.default.createElement(
                     'h1',
-                    null,
+                    { style: { textAlign: 'left' } },
                     'Update Account Settings'
                 ),
                 this.props.formOneMsg.error ? _react2.default.createElement(
@@ -26775,7 +26775,7 @@ module.exports = function (_React$Component) {
                 ),
                 _react2.default.createElement(
                     'h1',
-                    null,
+                    { style: { textAlign: 'left' } },
                     'Change Password'
                 ),
                 this.props.formTwoMsg.success ? _react2.default.createElement(
@@ -26885,7 +26885,7 @@ module.exports = function (_React$Component) {
                 _react2.default.createElement(
                     'p',
                     null,
-                    '@2018 || Brandon Blackwell || Using Bestbuy api.'
+                    '@2018 | Brandon Blackwell | Using Bestbuy api.'
                 )
             );
         }

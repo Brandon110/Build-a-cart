@@ -4,7 +4,7 @@ module.exports = class SettingsPage extends React.Component {
     render() {
         return (
             <div className='container'>
-            <h1>Update Account Settings</h1>
+            <h1 style={{textAlign: 'left'}}>Update Account Settings</h1>
             
              {
                 this.props.formOneMsg.error ? 
@@ -45,7 +45,7 @@ module.exports = class SettingsPage extends React.Component {
             <button type='submit' className='btn btn-primary'>Update</button>
             </form>
             
-            <h1>Change Password</h1>
+            <h1 style={{textAlign: 'left'}}>Change Password</h1>
             
             {
                 this.props.formTwoMsg.success ? 

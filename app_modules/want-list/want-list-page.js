@@ -6,8 +6,8 @@ module.exports = class WantList extends React.Component {
         
         return (
             <div className='container'>
+            <h1 style={{textAlign: 'left'}}>Want Cart</h1>
             <div className='form-group'>
-            <h1>Want Cart</h1>
             <hr/>
             <form onSubmit={(e) => this.props.handleSubmit(e)}>
             <input onChange={(e) => this.props.handleChange(e)} type='number' name='budget' min='0.00' step='.01' placeholder={wantList.budget || 'set price limit'} value={this.props.budget}/>
@@ -23,7 +23,7 @@ module.exports = class WantList extends React.Component {
             return <div className='col' key={index}>
             <button onClick={(e) => this.props.handleRemoveItemToWantList(e)} id={result._id} type='button' className='removeBtn'>&#10006;</button>
             <h5>{result.name}</h5>
-            <img className='cartImgs' onError={(e) => this.props.handleImgError(e)} src={result.image} alt={result.name}/>
+            <img className='cartImgs img-thumbnail' onError={(e) => this.props.handleImgError(e)} src={result.image} alt={result.name}/>
             <p><b>Description:</b> {result.description}</p>
             <p><b>Current price:</b> {result.price}</p>
             <hr/>
